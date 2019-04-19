@@ -16,7 +16,7 @@ app.get('/comic', (request, response) => {
     })
   } else {
     response.send('Find a comic by adding a querystring to the current page. For example: https://tierneyxkcd.azurewebsites.net/comic?id=112')
-  }a
+  }
 })
 
 app.listen(port, () => console.log(`Our app is now listening on port ${port}!`))
