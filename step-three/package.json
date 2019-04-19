@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "lint": "standard",
+    "diff": "npx prettydiff diff source:\"app.js\" diff:\"app.complete.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tierney Cyren <hello@bnb.im> (https://bnb.im)",
