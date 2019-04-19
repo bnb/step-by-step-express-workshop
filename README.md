@@ -2,6 +2,16 @@
 
 The intent of this project is to take you step-by-step through the process of building an Express app, documenting the changes as bite-sized chunks that you'll ideally be able to pick up and iterate upon rapidly.
 
+## Requirements
+
+- All steps:
+  - [Node.js](https://nodejs.org/en/)
+- Step Seven:
+  - [Docker app](https://www.docker.com/get-started)
+  - [Docker Hub account](https://hub.docker.com/)
+- Optional:
+  - [Azure account](https://aka.ms/step-by-step-express-azure) (free tier works just fine 💖)
+
 ## Step Zero
 
 - Initalize the repo with the universal documents that we should have in every project
@@ -48,7 +58,7 @@ cd step-three
 node app.js
 ```
 
-Read more in the Step Three [README.md](./step-three/README.md) 
+Read more in the Step Three [README.md](./step-three/README.md)
 
 ## Step Four
 
