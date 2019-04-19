@@ -6,9 +6,10 @@ const port = 8080
 
 app.engine('handlebars', handlebars())
 app.set('view engine', 'handlebars')
+app.use(express.static('static'))
 
-app.get('/', (request, response) => {
-  response.send('Hello from XKCD-serv! 👋')
+app.get('/', (req, res) => {
+  res.send('Hello from XKCD-serv! 👋')
 })
 
 app.get('/comic', (request, response) => {
