@@ -11,7 +11,9 @@ app.get('/comic', (request, response) => {
   if (request.query.id) {
     r(`https://xkcd.com/${request.query.id}/info.0.json`, (error, responseFromAPI, body) => {
       if (error) throw error
+
       console.log(`Response from XKCD website when calling https://xkcd.com/${request.query.id}/info.0.json: ${responseFromAPI} ${responseFromAPI.statusCode}`)
+
       response.send(body)
     })
   } else {
