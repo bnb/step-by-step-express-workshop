@@ -35,9 +35,8 @@ app.get('/comic', (request, response, next) => {
   }
 })
 
-// Error function
-app.use((error, request, response, next) => { // Express can tell this is an error handler because we're passing 4 variables to itti
-  response.render('error', { error: error })
+app.use((error, request, response, next) => {
+  response.render('error', { problem: error })
 })
 
 app.listen(port, () => console.log(`Our app is now listening on port ${port}!`))
